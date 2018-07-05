@@ -40,17 +40,15 @@ li {
 #title {
 	text-align: center;
 	-webkit-margin-after: 0px;
-	font-size: 65px;
-	height: 100px;
-	position: relative;
-	right: 33px;
-	top:0px;
+	font-size: 1.9rem;
+	height: 55px;
 }
 
 #title-sub {
 	margin-bottom: 0px;
-	position: relative;
-	right: 30px;
+	margin-top: 0px;
+	font-family: alef;
+	font-size: .9rem;
 }
 
 #tribute-info {
@@ -62,4 +60,10 @@ li {
 	font-family: alef;
 	font-size: 15px;
 	line-height: 30px;
+}
+
+@media (min-width: 768px) {
+	#title {
+		font-size: 3.5rem;
+	}
 }
