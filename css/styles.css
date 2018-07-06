@@ -4,7 +4,20 @@ body {
    line-height: 1.6rem;
    font-weight: 300;
    }
-   
+
+.container:after,
+.row:after,
+li:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
 #main {
    max-width: 1000px;
    width: 100%;
@@ -22,7 +35,7 @@ body {
    border-bottom: 1px solid #E1E1E1
    }
    
-#title,h3,image-caption,h2 {
+#title,h3,image-caption,h2,blockquote,h5,h4 {
    margin-top: 0;
    margin-bottom: 2rem;
    font-weight: 500;
@@ -48,7 +61,7 @@ body {
 #image {
 	margin-top: .5rem;
    }
-#image-caption {
+#image-caption,h5,h4 {
    font-weight: 400;
    font-size: .3rem;
    text-align: center;
@@ -76,15 +89,37 @@ h2 {
 	font-size: 1.0rem;
 }
 
-#li-con-3 {
-   float: right;
-   
-}
-
 li {
 	margin: 20px 15px;
 	margin-bottom: 10px;
 }
+
+blockquote {
+   font-size: .7rem;
+   margin-bottom: 30px;
+   margin-top: 20px;
+   opacity: .5;
+   line-height: 2;
+   padding: 20px 0;
+   border-bottom: 1px solid #E1E1E1;
+   border-top:  1px solid #E1E1E1;
+
+}
+
+#lalaee {
+   padding-top: 15px;
+}
+h5 {
+   letter-spacing: .05rem;
+   padding-bottom: 0px;
+   border-bottom: 0px;
+}
+
+#lalaee, #Moises {
+   opacity: 0.2;
+
+}
+
 
 
 @media (min-width: 550px) {
@@ -92,8 +127,38 @@ li {
       width: 48%;
    }
 
-   #li-con-2, #li-con-3 {
+   #li-con-2, #li-con-4 {
       margin-left: 2%;
    }
+
+
+}
+
+@media (min-width: 1024px) {
+   ul {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+#lalaee {
+   padding-top: 10px;
+}
+#lalaee, #Moises {
+   font-size:.6rem;
+}
+
+#image-caption {
+   font-size: .9rem;
+
+}
+
+#sub-title-container {
+   margin-bottom: 30px;
+   margin-top: 7px;
+}
+
+#logo {
+   max-width: 60px;
+}
 
 }
