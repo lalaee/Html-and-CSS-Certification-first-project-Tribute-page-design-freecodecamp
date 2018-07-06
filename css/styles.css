@@ -5,6 +5,10 @@ body {
    font-weight: 300;
    }
 
+a {
+   text-decoration: none;
+}
+
 .container:after,
 .row:after,
 li:after,
@@ -116,7 +120,7 @@ h5 {
 }
 
 #lalaee, #Moises {
-   opacity: 0.2;
+   opacity: 0.3;
 
 }
 
